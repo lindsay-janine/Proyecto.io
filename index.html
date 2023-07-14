@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>HeyShop!</title>
+</head>
+<body>
+    <header>
+        <img src=fondoazul.png alt="" width="100%">
+
+        <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menú</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HiShop</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">**</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Artículos</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#Sobre-nosotros">Sobre nosotros</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+    </header>
+    <body>
+        <div class="principal">
+            <h1 class="Titulo-principal">HeyShop!</h1>
+            <h2 class="Venta-art">Venta de artículos del hogar, eléctronicos, y mucho más...</h2>
+        </div>
+        <div class="img-principal">
+          <picture>
+            <source media="(max-width: 500px)" srcset="imgprincipal-removebg-preview.png">
+            <img src="ecommerce-removebg-preview.png" alt="">
+          </picture>
+        </div>
+        
+        <div id="Sobre-nosotros">
+            <h1>Sobre nosotros</h1>
+            <p>Somos una empresa dedicada a la venta de artículos por internet. Contamos con un catálogo con productos del hogar, electrónicos y mucho más.</p>
+        </div>
+
+        <section id="Empresa">
+            <div class="mision">
+                <h1>Misión</h1>
+                <p>Empresa dedicada a cumplir las necesidades de nuestro cliente, con dedicación, confiabilidad y estrategia.</p>
+                <img src="mision-removebg-preview.png" alt="" width="120px" height="100px">
+            </div>
+            <div class="vision">
+                <h1>Visión</h1>
+                <p>Cumplir con las tendencias que el mercado solicita en el momento adecuado. </p>
+                <img src="vision-removebg-preview.png" alt=""  width= "100px" height="100px" >
+            </div>
+            <div class="valores">
+                <h1>Valores</h1>
+                <p>Los valores como empresa son la responsabilidad, el comprimiso, el respeto...</p>
+                <img src="valores.png" alt="" width="150px" height="100px">
+            </div>
+        </section>
+    </body>
+</body>
+</html>
